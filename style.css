@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* TOP BAR CSS START */
+.topBar_container{
+  max-width: 1400px;  
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 10px 0;
+}
+.topBar_cont1{
+  display: flex;
+  align-items: center;
+}
+.topBar_cont1 p {
+  margin: 0; /* Remove default margin */
+  padding: 0 10px; /* Add padding to create space between items */
+}
+.topBar_cont2,
+.topBar_cont3 {
+  display: flex;
+  align-items: center;
+}
+.topBar_cont2 p {
+  margin: 0; /* Remove default margin */
+  padding-right: 10px; /* Add padding to create space between items */
+}
+.topBar_cont3 i  {
+padding: 0 10px;
+}
+
+/* TOP BAR CSS END */
+/*--------------------------------------------------------------------------------------- */
+/* NAV BAR START */
+.navBar_logoImg{
+  margin-top: 10px; /* Remove default margin */
+  padding-right: 60px; /* Add padding to create space between items */
+  height: 50px;
+}
+.navbar-nav>li{
+  padding: 0 10px !important;
+}
+.navbar-nav>li>a {
+  color: black;
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav>li>a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; /* Adjust the distance of the underline */
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: transparent;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+.navbar-nav>li>a:hover {
+  color: red; /* Change text color on hover */
+}
+.navbar-nav>li>a:hover::after {
+  width: 100%; /* Make the underline span the width of the link text */
+  background-color: red;
+}
+/* NAV BAR END */
+/*--------------------------------------------------------------------------------------- */
+/* SLIDER SECTION START */
+.leftSide_Slider{
+  display: flex;
+  justify-content: space-between;
+}
+.left1{
+  padding: 10px;
+margin-top: 10%;
+margin-right: 15px;
+width: 60%;
+position: relative;
+z-index: 1;
+}
+.left1-box{
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  transform: translateY(-5px);
+  background-color: rgb(247, 156, 171);
+  z-index: -1;
+}
+.left1 :nth-child(2){
+  font-size: 20px;
+}
+.left1 :nth-child(3){
+  font-size: 50px;
+  font-weight: 600;
+}
+.left1 :nth-child(4){
+  font-size: 12px;
+line-height: 30px;
+}
+.left2{
+  margin-top: 10%;
+}
+.multiple-items div{
+  margin: 40px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+} 
+.multiple-items>div>p{
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 700;
+}
+.rightBgColor{
+  background-color: rgba(0, 0, 0, 0.1);
+  
+}
+.rightSide_Slider{
+  display: flex;
+  justify-content: space-between;
+}
+.faCircle{
+  transition: transform 0.5s ease-in-out;
+}
+.faCircle:hover{
+  transform: translateY(-20px);
+  color: red;
+}
+.fa-circle{
+  font-size: 12px;
+}
+.fa-circle>p{
+  font-size: 15px;
+  margin-top: 8px;
+}
+.btnAddToCart{
+  display: flex;
+  margin: auto;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 20%;
+  
+  
+}
+@media only screen and (min-width: 1200px) {
+  .sliderSectionHeight {
+    height: auto;
+  }
+}
+/* SLIDER SECTION END */
+.owl-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.item>img {
+  max-width: 100px;
+  height: 100px;
+}
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* OUR BEST CTEGORIES START */
+
+.grid-container-categories   {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.categoryImg>img{
+  height: 100px;
+  width: 100px;
+}
+@media screen and (max-width: 992px) {
+  .grid-container-categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* OUR BEST CTEGORIES END */
+/*--------------------------------------------------------------------------------------- */
+/* UPCOMING STOCK START */
+/* .card-bgImg{
+  background-image: url("./assets/Categories/Rectangle\ -1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+} */
+.card{
+  position: relative;
+}
+.card-img-top{
+  height: 150px;
+  padding: 10px;
+}
+.likeImg{
+position: absolute;
+top: 15px;
+right: 15px;
+}
+.likeImg:hover{
+  color: red;
+  font-weight: bold;
+}
+.btnpara{
+  display: flex;
+  justify-content: space-between;
+}
+.card-title{
+  font-size: 15px;
+  font-weight: bold;
+}
+.btnpara>a{
+  height: 30px;
+  width: 50%;
+  font-size: 10px;
+}
+@media screen and (max-width: 992px) {
+  .card {
+   height: auto;
+   width: 14rem !important;
+  }
+  .card-img-top{
+    padding: 5px;
+  }
+  .card-title{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .btnpara>a{
+height: 10% !important;
+width: 60%;
+font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+   height: auto;
+   width: 10rem !important;
+  }
+  .card-img-top{
+    padding: 5px;
+  }
+  .card-title{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .btnpara>a{
+height: 10% !important;
+width: 100% !important;
+font-size: 8px;
+  }
+  .btnpara>p{
+    font-size: 12px;
+  }
+}
+/* UPCOMING STOCK END */
