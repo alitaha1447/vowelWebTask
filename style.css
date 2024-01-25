@@ -19,8 +19,8 @@
   align-items: center;
 }
 .topBar_cont1 p {
-  margin: 0; /* Remove default margin */
-  padding: 0 10px; /* Add padding to create space between items */
+  margin: 0; 
+  padding: 0 10px; 
 }
 .topBar_cont2,
 .topBar_cont3 {
@@ -28,8 +28,8 @@
   align-items: center;
 }
 .topBar_cont2 p {
-  margin: 0; /* Remove default margin */
-  padding-right: 10px; /* Add padding to create space between items */
+  margin: 0; 
+  padding-right: 10px; 
 }
 .topBar_cont3 i  {
 padding: 0 10px;
@@ -39,8 +39,8 @@ padding: 0 10px;
 /*--------------------------------------------------------------------------------------- */
 /* NAV BAR START */
 .navBar_logoImg{
-  margin-top: 10px; /* Remove default margin */
-  padding-right: 60px; /* Add padding to create space between items */
+  margin-top: 10px; 
+  padding-right: 60px;
   height: 50px;
 }
 .navbar-nav>li{
@@ -49,7 +49,7 @@ padding: 0 10px;
 .navbar-nav>li>a {
   color: black;
   position: relative;
-  text-decoration: none; /* Remove default underline */
+  text-decoration: none; 
 }
 
 .navbar-nav>li>a::after {
@@ -57,16 +57,16 @@ padding: 0 10px;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -2px; /* Adjust the distance of the underline */
-  height: 2px; /* Adjust the thickness of the underline */
+  bottom: -2px; 
+  height: 2px; 
   background-color: transparent;
-  transition: background-color 0.3s; /* Add transition for smooth color change */
+  transition: background-color 0.3s; 
 }
 .navbar-nav>li>a:hover {
-  color: red; /* Change text color on hover */
+  color: red; 
 }
 .navbar-nav>li>a:hover::after {
-  width: 100%; /* Make the underline span the width of the link text */
+  width: 100%; 
   background-color: red;
 }
 /* NAV BAR END */
@@ -209,14 +209,14 @@ line-height: 30px;
 /* OUR BEST CTEGORIES END */
 /*--------------------------------------------------------------------------------------- */
 /* UPCOMING STOCK START */
-/* .card-bgImg{
-  background-image: url("./assets/Categories/Rectangle\ -1.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-
-} */
 .card{
   position: relative;
+}
+.card-body>span{
+font-size: 10px;
+}
+.checked {
+  color: orange;
 }
 .card-img-top{
   height: 150px;
