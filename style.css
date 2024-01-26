@@ -284,3 +284,207 @@ font-size: 8px;
   }
 }
 /* UPCOMING STOCK END */
+/* Common styles for all devices */
+.container-fluid {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.pumaBgImage {
+  width: 100%;
+  height: 300px;
+  background-image: url("./assets/Banner/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.rowContent{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+ 
+}
+.leftContent{
+  position: relative;
+  left: 5%;
+}
+
+/* Media queries for different devices */
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .leftContent{
+    position: relative;
+    left: 8%;
+  }
+  .leftContent-Container>p:nth-child(1){
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .leftContent-Container>p:nth-child(2){
+    color: white;
+    font-size: 6px;
+  }
+  .leftContent-Container{
+    margin-top: 6%;
+  }
+  .leftContent-Container> .btn{
+    height: 10px;
+    color: red;
+    font-size: 5px;
+    font-weight: bold;
+    background-color: white;
+    margin: 10px 0;
+  }
+  .Brand-1{
+    height: 175px;
+    position: relative;
+    left: 42%;
+    top: -3%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container-fluid {
+    padding: 0 30px;
+  }
+  .leftContent{
+    position: relative;
+    left: 5%;
+  }
+  .leftContent-Container>p:nth-child(1){
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .leftContent-Container{
+    margin-top: 20%;
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+  .leftContent-Container>p:nth-child(2){
+    color: white;
+    font-size: 6px;
+  }
+  .leftContent-Container> .btn{
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    margin: 10px 0;
+  }
+  .Brand-1{
+    height: 175px;
+    position: relative;
+    left: 42%;
+    top: -3%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pumaBgImage {
+    height: 400px; 
+  }
+  .leftContent{
+    position: relative;
+    left: 5%;
+  }
+  .leftContent-Container{
+    margin-top: 8%;
+  }
+  .leftContent-Container>p:nth-child(1){
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .leftContent-Container>p:nth-child(2){
+    color: white;
+    font-size: 8px;
+  }
+  .leftContent-Container> .btn{
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    margin: 10px 0;
+  }
+  .Brand-1{
+    height: 254px;
+    position: relative;
+    left: 42%;
+    top: -3%;
+  }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container-fluid {
+    padding: 40px 40px;
+  }
+  .leftContent{
+    position: relative;
+    left: 5%;
+  }
+  .leftContent-Container{
+    margin-top: 8%;
+  }
+  .leftContent-Container>p:nth-child(1){
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .leftContent-Container>p:nth-child(2){
+    color: white;
+    font-size: 10px;
+  }
+  .leftContent-Container> .btn{
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    margin: 10px 0;
+  }
+  .Brand-1{
+    height: 295px;
+    position: relative;
+    left: 38%;
+    top: -7%;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  .container-fluid {
+    padding: 50px 50px;
+  }
+  .leftContent-Container{
+    margin-top: 8%;
+  }
+  .leftContent-Container>p:nth-child(1){
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .leftContent-Container>p:nth-child(2){
+    color: white;
+    font-size: 10px;
+  }
+  .leftContent-Container> .btn{
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    margin: 10px 0;
+  }
+  .Brand-1{
+    height: 342px;
+    position: relative;
+    left: 38%;
+    top: -7%;
+  }
+}
+
+
